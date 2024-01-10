@@ -1,0 +1,15 @@
+@import "../Common/common";
+@import "../Variable/variable";
+@import "../Mixin/mixin";
+  
+#image_part{
+    .image{
+    display: flex;
+    column-gap: 15px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+}

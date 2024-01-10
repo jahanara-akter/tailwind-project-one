@@ -1,0 +1,81 @@
+@import "../Common/common";
+@import "../Variable/variable";
+@import "../Mixin/mixin";
+
+footer{
+    background: $header_color;
+    .main{
+        display: flex;
+        justify-content: center;
+        .petrol{
+            margin-right: 145px;
+            .text{
+                img{
+                    margin: 149px 0 33px 0;
+                }
+                p{
+                    @include typograpy($font_color,$font_family,14px,$font_style,400,$line_height);
+                    margin-bottom: 15px;
+                i{
+                    margin-right: 5px;
+                }
+                }
+            }
+            .icon{
+                margin-top: 19px;
+                display: flex;
+                column-gap: 12px;
+                i{
+                font-size: 16px;
+                background: $nav_color;
+                border-radius: 50%;
+                width: 29px;
+                height: 29px;
+                text-align: center;
+                line-height: 29px;
+                color: $font_color;
+                }
+            }
+        }
+        .company{
+            margin-right: 90px;
+            h4{
+                @include typograpy($font_color,$font_family,16px,$font_style,700,$line_height);
+                margin: 176px 0 21px 0;
+            }
+            p{
+                @include typograpy($font_color,$font_family,14px,$font_style,400,$line_height);
+                margin-bottom: 15px;
+            }
+        }
+        .others{
+            margin-right: 85px;
+            h4{
+                @include typograpy($font_color,$font_family,16px,$font_style,700,$line_height);
+                margin: 176px 0 21px 0;
+            }
+            p{
+                @include typograpy($font_color,$font_family,14px,$font_style,400,$line_height);
+                margin-bottom: 15px;
+            }
+        }
+        .certificate{
+            h4{
+                @include typograpy($font_color,$font_family,16px,$font_style,700,$line_height);
+                margin: 176px 0 21px 0;
+            }
+            .logo{
+                display: flex;
+                column-gap: 5px;
+            }
+        }
+    }
+    .last_part{
+        margin-top: 176px;
+      padding: 43px 0 42px 426px;
+       background: #282828;
+       p{
+        @include typograpy(#6C6C6C,$font_family,16px,$font_style,500,$line_height);
+       }
+}
+}

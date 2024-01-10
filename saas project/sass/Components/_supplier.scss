@@ -1,0 +1,18 @@
+@import "../Common/common";
+@import "../Variable/variable";
+@import "../Mixin/mixin";
+
+#supplier_part{
+    h2{
+        padding: 78px 178px 100px 0;
+        width: 470px;
+        height: 216px;
+        @include typograpy ($header_color,$font_family,48px,$font_style,700,72px);
+    }
+    p{
+        padding: 161px 0;
+        margin-left: 161px;
+        width: 651px;
+        @include typograpy(#6C6C6C,$font_family,16px,$font_style,500,$line_height);
+    }
+}

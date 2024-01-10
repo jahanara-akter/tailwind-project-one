@@ -1,0 +1,42 @@
+@import "../Common/common";
+@import "../Variable/variable";
+@import "../Mixin/mixin";
+
+
+.navbar{
+    background: $nav_color;
+    padding: 27px 0;
+    width: 100%;
+    .navbar-collapse{
+        column-gap: 71px;
+    }
+    .navbar-nav{
+        column-gap: 47px;
+    }
+    a{
+            @include typograpy($font_color,$font_family , 16px ,$font_style,600,$line_height);
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                top:27px;
+                left: 0px;
+                height: 2px;
+                width: 57px;
+                background-color: $font_color;
+                transition: 0.4s;
+                visibility: hidden;
+            }
+            &:hover::after{
+                visibility: visible;
+            }
+    }
+    button{
+        border: 1px solid $font_color;
+        background: transparent;
+        color: $font_color;
+        padding: 13px 32px 14px 31px;
+        @include typograpy($font_color,$font_family , 16px ,$font_style,600,$line_height);
+    }
+
+}

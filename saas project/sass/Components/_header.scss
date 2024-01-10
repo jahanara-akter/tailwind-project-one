@@ -1,0 +1,44 @@
+@import "../Common/common";
+@import "../Variable/variable";
+@import "../Mixin/mixin";
+ 
+header{
+    background: $header_color;
+    padding: 15px 0;
+    border-bottom: 1px solid $border_bottom;
+    .main{
+        display: flex;
+        flex-direction: row;
+        .gmail i{
+            margin-right: 5px;
+        }
+        a{
+            @include typograpy ($font_color,$font_family,12px,$font_style,400,$line_height);
+        }
+        .telephone{
+            margin-left: 47px;
+            margin-right: 700px;
+            position: relative;
+            a{
+                @include typograpy ($font_color,$font_family,12px,$font_style,400,$line_height);
+            }
+            i{
+                margin-right: 5px;
+                font-size: 16px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: -22px;
+                width: 1px;
+                height: 16px;
+                background-color: #5C6A92;
+            }
+        }
+        .icon i{
+            margin-right: 22px;
+            font-size: 16px;
+        }
+    }
+}

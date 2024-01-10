@@ -1,0 +1,25 @@
+@import "../Common/common";
+@import "../Variable/variable";
+@import "../Mixin/mixin";
+ 
+
+#contact{
+    background: $nav_color;
+    border-bottom: 2px solid $border_bottom;
+    .main{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        p{
+            @include typograpy($font_color,$font_family,36px,$font_style,700,$line_height);
+            padding: 32px 70px 30px 390px ;
+        }
+        button{
+            width: 142px;
+            height: 51px;
+            border: 2px solid $font_color;
+            margin: 23px 390px 37px 0 ;
+            @include typograpy($font_color,$font_family,16px,$font_style,600,$line_height);
+        }
+    }
+}

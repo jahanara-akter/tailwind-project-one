@@ -1,0 +1,8 @@
+@mixin typograpy($color,$ff,$fs,$fst,$fw,$lh){
+    color: $color;
+    font-family: $ff;
+    font-size: $fs;
+    font-style: $fst;
+    font-weight:$fw;
+    line-height: $lh;
+}

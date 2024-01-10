@@ -1,0 +1,51 @@
+@import "../Common/common";
+@import "../Variable/variable";
+@import "../Mixin/mixin";
+
+#blog_part{
+    background: #F0F0F0;
+    .main{
+        display: flex;
+        column-gap: 62px;
+        padding: 110px 0 29px;
+        text-align: center;
+        justify-content: center;
+    }
+    .img_1{
+        position: relative;
+        img{
+        width: 100%;
+        height: 100%;
+        }
+    }
+    .overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.60);
+        width: 100%;
+        height: 100%;
+       }
+        h3{
+            @include typograpy($font_color,$font_family,24px,$font_style,700,$line_height);
+            padding: 75px 44px 52px 46px;
+        }
+        button{
+            width: 123px;
+            height: 38.722px;
+            background: rgba(255, 255, 255, 0.50);
+            @include typograpy($font_color,$font_family,12px,$font_style,600,$line_height);
+            margin: 0 170px 55px 46px;
+        }
+        p{
+            text-align: right;
+            margin-right: 80px;
+            padding-bottom: 90px;
+            @include typograpy($header_color,$font_family,16px,$font_style,700,$line_height);
+            i{
+                margin-left: 1px;
+                width: 25px;
+                color: $header_color;
+            }
+        }
+}

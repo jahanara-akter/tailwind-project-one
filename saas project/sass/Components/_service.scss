@@ -1,0 +1,47 @@
+@import "../Common/common";
+@import "../Variable/variable";
+@import "../Mixin/mixin";
+
+#service_part{
+    margin:28px 0 0 0 ;
+    .main_2{
+        display: flex;
+        width: 100%;
+        .img{
+            width: 50%;
+            position: relative;
+            h2{
+                @include typograpy($header_color,$font_family,64px,$font_style,700,$line_height);
+                padding: 106px 61px 0 240px;
+               }
+            p{
+               @include typograpy(#6C6C6C,$font_family,16px,$font_style,500,$line_height);
+               padding: 0 84px 111px 242px;
+               width: 664px;
+              }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .overlay{
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.60);
+                width: 100%;
+                height: 100%;
+               }
+                h3{
+                    @include typograpy($font_color,$font_family,36px,$font_style,700,$line_height);
+                    padding: 147px 127px 19px 116px;
+                }
+                button{
+                    width: 162px;
+                    height: 51px;
+                    background: $nav_color;
+                    @include typograpy($font_color,$font_family,16px,$font_style,600,$line_height);
+                    margin: 0 682px 139px 116px;
+                }
+        }
+    }
+}
